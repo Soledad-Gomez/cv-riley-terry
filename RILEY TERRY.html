@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RILEY TERRY</title>
+    <link rel="icon" type="image/x-icon" href="./favicon (1).ico">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/1d2886a679.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="arriba">
+        <header>
+            <img onmouseover="bigImg(foto)" onmouseout="normalImg(foto)" id="foto" src="./32.jpg" alt="Foto de Perfil">
+            <h1 id="nombre"> RILEY TERRY</h1>
+            <h2 id="profesion"> Administradora de Empresas</h2>
+        </header>
+    </section>  
+    
+    <section class="abajo">
+        <section class="lado_izquierdo">
+            
+            <div class="contacto">
+                <span>
+                    <button onclick="myFunction()"  type="button" class="boton" id="email"><i class="fa-solid fa-envelope"></i></button>
+                    <button onclick="myFunction2()" type="button" class="boton" id="telefono"><i class="fa-solid fa-phone"></i></button>
+                    <button onclick="myFunction3()" type="button" class="boton" id="ubicacion"><i class="fa-solid fa-location-dot"></i></button>
+                </span>
+            </div>
+            <div class="perfil" id="perfil">
+                <h2>Perfil</h2>
+                <p id="p">Administradora de empresas con visión de futuro y logro de objetivos durante diez años de carrera.</p> 
+                <p id="p">Gestora de cambios ambiciosa y motivada, dedicada a la mejora continua del negocio.</p> 
+                <p id="p">Centrada en el aumento de los ingresos, y la optimización de recursos y procedimientos operativos.</p> 
+                <p id="p">Dedicada a la maximización de beneficios a través de estrategias empresariales innovadoras.</p>       
+            </div>
+            <div id="aptitudes">
+                <h2>Aptitudes</h2>
+                <ul>
+                    <li>Resolución de problemas</li>
+                    <li>Creatividad</li>
+                    <li>Liderazgo</li>
+                    <li>Adaptación a los cambios</li>
+                    <li>Buen Manejo del tiempo</li>
+                </ul>
+            </div>
+            <div id="idiomas">
+                <h2>Idiomas</h2>
+                    </ul>    
+                        <li>Español: Hablante nativa</li>
+                        <li>Ingles: Avanado</li>
+                        <li>Chino: Intermedio</li>
+                    <ul>
+            </div>
+        </section>
+        <section class="lado_derecho">    
+            <div id="expeciencia">
+                <h2>Experiencia</h2>
+                <div>
+                    <h3>Administrador, Grupo profesional de administración y consultoría JK</h3>
+                    <p>02/2013 - 09/2018</p>
+                    <ul>
+                        <li>Estudio de mercado para identificar oportunidades de expanción</li>
+                        <li>Desarrollo de estrategias de oolaboración para aumentar los ingresos, las ganancias y el crecimiento.</li>
+                        <li>Analisis de las necesidades y objetivos de la empresa a corto y largo plazo.</li>
+
+                    </ul>
+                </div>
+                <div>
+                    <h3>Administrador, Empresa Titan Distribuciones SRL</h3>
+                    <p>10/2018 - 03/2021</p>
+                    <ul>
+                        <li>Elaboración de informes financieros para facilitar la valoración de los resultados por parte de la dirección de la compañia</li>
+                        <li>Gestión de personal, adjudicación de funciones, selección de nuevos miembros y organización del área de recursos humanos.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Gerente Administrativo, EmprendeCAT</h3>
+                    <p>04/2021 - Presente</p>
+                    <ul>
+                        <li>Supervisión de las actividades administrativas de la empresa</li>
+                        <li>Gestión funanciera y presupuestaria</li>
+                        <li>Dirigir y coordinar las actividades de los departamentos de precios, ventas y compras</li>
+                        <li>Presentación de resultados financieros a la junta directiva</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="formacion" id="formacion">
+                <h2>Formación</h2>
+                <div>
+                    <p>2017</p>
+                    <h3>Universidad de Buenos Aires</h3>
+                    <p>Licenciado en Administración</p>
+                </div>
+                <div>
+                    <p>2020</p>
+                    <h3>Universidad de Buenos Aires</h3>
+                    <p>Maestría y Especialización en Gestión Empresaria de Negocios Internacionales</p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script>
+        function bigImg(x) {
+          x.style.width = "170px";
+        }
+        
+        function normalImg(x) {
+          x.style.width = "150px";
+        }
+        function myFunction() {
+          document.getElementById("email").innerHTML = "riley_terry@gmail.com";
+            }
+
+        function myFunction2() {
+          document.getElementById("telefono").innerHTML = "+(54)11154xxxxxx";
+        }  
+        
+        function myFunction3() {
+          document.getElementById("ubicacion").innerHTML = "Buenos Aires - Argentina";
+            }
+    </script>
+</body>
+</html>

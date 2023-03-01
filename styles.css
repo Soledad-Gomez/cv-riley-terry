@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+body{
+    background-color: #F9DBBB;
+    display: flex;
+    flex-direction: column;
+}
+
+.arriba {
+    padding: 10px;
+}
+
+#foto {
+    width: 150px;
+    border-radius: 50%;
+}
+#nombre {
+    font-size: 42px;
+    margin-bottom: 4px;
+}
+#profesion {
+    margin-top: 4px;
+}
+
+.abajo {
+    display: flex;
+}
+
+@media (max-width: 800px) {
+    .abajo {
+      flex-direction: column;
+    }
+  }
+
+.lado_izquierdo {
+    display: flex;
+    background-color: #2E3840;
+    color: white;
+    flex-direction: column;
+    padding: 13px 12px 0px 10px;
+}
+.contacto {
+    display: flex;
+    justify-content: center;
+    background: #2E3840;
+ }
+#email {
+    background-image: url('./Email-Vector-PNG-HD-Quality.png');
+}
+
+.boton {
+    color: white;
+    height: 17px;
+    margin: 10px;
+    padding: 0px;
+    border: 0px;
+    background-color: #2E3840;
+    
+}
+
+
+
+.perfil {
+    font-family: 'Lora', serif;
+}
+
+#p {
+    font-size: 13px;
+}
+
+.lado_derecho {
+    display: flex;
+    flex-direction: column;
+    padding: 22px;
+}
