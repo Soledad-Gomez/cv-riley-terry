@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="./favicon (1).ico">
     <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/1d2886a679.js" crossorigin="anonymous"></script>
+    <script src="./js/cv.js"></script>
 </head>
 <body>
     <section class="arriba">
@@ -22,12 +23,33 @@
         <section class="lado_izquierdo">
             
             <div class="contacto">
-                <span>
-                    <button onclick="myFunction()"  type="button" class="boton" id="email"><i class="fa-solid fa-envelope"></i></button>
-                    <button onclick="myFunction2()" type="button" class="boton" id="telefono"><i class="fa-solid fa-phone"></i></button>
-                    <button onclick="myFunction3()" type="button" class="boton" id="ubicacion"><i class="fa-solid fa-location-dot"></i></button>
-                </span>
+                <div>
+                    <a href="mailto: riley_terry@gmail.com" target="_blank">
+                        <button type="button" class="boton" id="email"><i class="fa-solid fa-envelope"></i></button>
+                    </a>    
+                </div>
+                <div>
+                    <button type="button" class="boton" id="telefono"><i class="fa-solid fa-phone"></i></button>
+                </div>
+                <div>    
+                    <a href="https://goo.gl/maps/FXw5jLpBcAMsf7PX8" target="_blank">
+                        <button type="button" class="boton" id="ubicacion"><i class="fa-solid fa-location-dot"></i></button>
+                    </a>
+                </div>    
             </div>
+            <div class="parrafo">
+                <p id="e-mail">
+                    riley_terry@gmail.com 
+                </p>
+                <p id="celular">
+                    +(54)11154xxxxxx
+                </p>
+                <p id="ciudad">
+                    Buenos Aires - Argentina
+                </p>
+            </div>
+                
+            
             <div class="perfil" id="perfil">
                 <h2>Perfil</h2>
                 <p id="p">Administradora de empresas con visión de futuro y logro de objetivos durante diez años de carrera.</p> 
@@ -102,24 +124,18 @@
         </section>
     </section>
     <script>
-        function bigImg(x) {
-          x.style.width = "170px";
-        }
+        document.getElementById("email").addEventListener("mouseover", mostrarMail);
         
-        function normalImg(x) {
-          x.style.width = "150px";
-        }
-        function myFunction() {
-          document.getElementById("email").innerHTML = "riley_terry@gmail.com";
-            }
+        document.getElementById("email").addEventListener("mouseout", ocultarMail);
 
-        function myFunction2() {
-          document.getElementById("telefono").innerHTML = "+(54)11154xxxxxx";
-        }  
+        document.getElementById("telefono").addEventListener("mouseover", mostrarTelefono);
         
-        function myFunction3() {
-          document.getElementById("ubicacion").innerHTML = "Buenos Aires - Argentina";
-            }
+        document.getElementById("telefono").addEventListener("mouseout", ocultarTelefono);
+
+        document.getElementById("ubicacion").addEventListener("mouseover", mostrarUbicacion);
+        
+        document.getElementById("ubicacion").addEventListener("mouseout", ocultarUbicacion);
+
     </script>
 </body>
 </html>
